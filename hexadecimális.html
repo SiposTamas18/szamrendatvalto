@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexadecimális</title>
+    <link rel="stylesheet" href="átváltó.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="decimális.html">Decimális</a></li>
+            <li><a href="bináris.html">Bináris</a></li>
+            <li><a href="oktális.html">Oktális</a></li>
+            <li><a href="hexadecimális.html">Hexadecimális</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="hexadecimal">
+                <h2>Hexadecimális Átváltás</h2>
+                <input type="number" id="hexadecimalInput" placeholder="Írj be egy hexadecimális számot">
+                <button onclick="convertHexadecimal()">Átváltás</button>
+                <p id="hexadecimalResult"></p>
+            </section>
+            <section id="hexadecimal-quiz">
+                <h2>Hexadecimális Kvíz</h2>
+                <form id="hexadecimal-form">
+                    <div>
+                        <p>1. Mi az A hexadecimális szám decimális megfelelője?</p>
+                        <input type="radio" id="q1a" name="q1" value="10"> 10<br>
+                        <input type="radio" id="q1b" name="q1" value="15"> 15<br>
+                        <input type="radio" id="q1c" name="q1" value="12"> 12<br>
+                        <input type="radio" id="q1d" name="q1" value="11"> 11
+                    </div>
+                    <div>
+                        <p>2. Mi a hexadecimális 1F bináris megfelelője?</p>
+                        <input type="radio" id="q2a" name="q2" value="11111"> 11111<br>
+                        <input type="radio" id="q2b" name="q2" value="11110"> 11110<br>
+                        <input type="radio" id="q2c" name="q2" value="11101"> 11101<br>
+                        <input type="radio" id="q2d" name="q2" value="11011"> 11011
+                    </div>
+                    <div>
+                        <p>3. Mi a hexadecimális 2A bináris megfelelője?</p>
+                        <input type="radio" id="q3a" name="q3" value="101010"> 101010<br>
+                        <input type="radio" id="q3b" name="q3" value="101100"> 101100<br>
+                        <input type="radio" id="q3c" name="q3" value="111000"> 111000<br>
+                        <input type="radio" id="q3d" name="q3" value="101001"> 101001
+                    </div>
+                    <div>
+                        <p>4. Mi a hexadecimális C bináris megfelelője?</p>
+                        <input type="radio" id="q4a" name="q4" value="1100"> 1100<br>
+                        <input type="radio" id="q4b" name="q4" value="1110"> 1110<br>
+                        <input type="radio" id="q4c" name="q4" value="1000"> 1000<br>
+                        <input type="radio" id="q4d" name="q4" value="1010"> 1010
+                    </div>
+                    <div>
+                        <p>5. Mi a hexadecimális 3E bináris megfelelője?</p>
+                        <input type="radio" id="q5a" name="q5" value="111110"> 111110<br>
+                        <input type="radio" id="q5b" name="q5" value="111111"> 111111<br>
+                        <input type="radio" id="q5c" name="q5" value="111101"> 111101<br>
+                        <input type="radio" id="q5d" name="q5" value="111100"> 111100
+                    </div> 
+                    <button type="button" onclick="checkHexadecimalAnswers()">Ellenőriz</button>
+                </form>
+                <div id="hexadecimal-result"></div>
+            </section>
+        </div>
+    </main>
+   
+<div class="container">
+<h2>HexaDecimális Számrendszer</h2>
+<p>Hexadecimális számrendszer a 16-os alapú</p>
+<footer>
+<p>&copy; 2025 Számrendszer Kvíz. Minden jog fenntartva.</p>
+</footer>
+    
+
+<video width="600" controls>
+    <source src="videos/film.mp4" type="video/mp4">
+    A böngésződ nem támogatja a videót.
+  </video>
+    Nézd meg a videót
+<script src="átváltó.js"></script>

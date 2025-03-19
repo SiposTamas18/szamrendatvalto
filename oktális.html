@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oktális</title>
+    <link rel="stylesheet" href="átváltó.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="decimális.html">Decimális</a></li>
+            <li><a href="bináris.html">Bináris</a></li>
+            <li><a href="oktális.html">Oktális</a></li>
+            <li><a href="hexadecimális.html">Hexadecimális</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="octal">
+                <h2>Oktális Átváltás</h2>
+                <input type="number" id="octalInput" placeholder="Írj be egy oktális számot">
+                <button onclick="convertOctal()">Átváltás</button>
+                <p id="octalResult"></p>
+            </section>
+            <section id="octal-quiz">
+                <h2>Oktális Kvíz</h2>
+                <form id="octal-form">
+                    <div>
+                        <p>1. Mi az 12 oktális szám decimális megfelelője?</p>
+                        <input type="radio" id="q1a" name="q1" value="10"> 10<br>
+                        <input type="radio" id="q1b" name="q1" value="8"> 8<br>
+                        <input type="radio" id="q1c" name="q1" value="14"> 14<br>
+                        <input type="radio" id="q1d" name="q1" value="16"> 16
+                    </div>
+                    <div>
+                        <p>2. Mi az oktális 17 bináris megfelelője?</p>
+                        <input type="radio" id="q2a" name="q2" value="11101"> 11101<br>
+                        <input type="radio" id="q2b" name="q2" value="10001"> 10001<br>
+                        <input type="radio" id="q2c" name="q2" value="11001"> 11001<br>
+                        <input type="radio" id="q2d" name="q2" value="10101"> 10101
+                    </div>
+                    <div>
+                        <p>3. Mi az oktális 10 bináris megfelelője?</p>
+                        <input type="radio" id="q3a" name="q3" value="1000"> 1000<br>
+                        <input type="radio" id="q3b" name="q3" value="1010"> 1010<br>
+                        <input type="radio" id="q3c" name="q3" value="1100"> 1100<br>
+                        <input type="radio" id="q3d" name="q3" value="1001"> 1001
+                    </div>
+                    <div>
+                        <p>4. Mi az oktális 25 bináris megfelelője?</p>
+                        <input type="radio" id="q4a" name="q4" value="10101"> 10101<br>
+                        <input type="radio" id="q4b" name="q4" value="11010"> 11010<br>
+                        <input type="radio" id="q4c" name="q4" value="11101"> 11101<br>
+                        <input type="radio" id="q4d" name="q4" value="11011"> 11011
+                    </div>
+                    <div>
+                        <p>5. Mi az oktális 7 bináris megfelelője?</p>
+                        <input type="radio" id="q5a" name="q5" value="111"> 111<br>
+                        <input type="radio" id="q5b" name="q5" value="101"> 101<br>
+                        <input type="radio" id="q5c" name="q5" value="110"> 110<br>
+                        <input type="radio" id="q5d" name="q5" value="100"> 100
+                    </div>
+                    <button type="button" onclick="checkOctalAnswers()">Ellenőriz</button>
+                </form>
+                <div id="octal-result"></div>
+            </section>
+            
+        </div>
+    </main>
+    <section id="octal">
+        <div class="container">
+            <h2>Oktális Számrendszer</h2>
+            <p>Az oktális számrendszer 8-as alapú</p>
+            <footer>
+                <p>&copy; 2025 Számrendszer Kvíz. Minden jog fenntartva.</p>
+            </footer>
+    <script src="átváltó.js"></script>
+</body>
+</html>

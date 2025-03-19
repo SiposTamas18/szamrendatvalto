@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bináris</title>
+    <link rel="stylesheet" href="átváltó.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="decimális.html">Decimális</a></li>
+            <li><a href="bináris.html">Bináris</a></li>
+            <li><a href="oktális.html">Oktális</a></li>
+            <li><a href="hexadecimális.html">Hexadecimális</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="binary">
+                <h2>Bináris Átváltás</h2>
+                <input type="text" id="binaryInput" placeholder="Írj be egy bináris számot">
+                <button onclick="convertBinary()">Átváltás</button>
+                <p id="binaryResult"></p>
+            </section>
+
+            <section id="binary-quiz">
+                <h2>Bináris Kvíz</h2>
+                <form id="binary-form">
+                    <section id="binary-quiz">
+                        <form id="binary-form">
+                            <div>
+                                <p>1. Mi az 1010 bináris szám decimális megfelelője?</p>
+                                <input type="radio" id="q1a" name="q1" value="8"> 8<br>
+                                <input type="radio" id="q1b" name="q1" value="10"> 10<br>
+                                <input type="radio" id="q1c" name="q1" value="12"> 12<br>
+                                <input type="radio" id="q1d" name="q1" value="14"> 14
+                            </div>
+                            <div>
+                                <p>2. Mi a bináris 1001 hexadecimális megfelelője?</p>
+                                <input type="radio" id="q2a" name="q2" value="9"> 9<br>
+                                <input type="radio" id="q2b" name="q2" value="A"> A<br>
+                                <input type="radio" id="q2c" name="q2" value="B"> B<br>
+                                <input type="radio" id="q2d" name="q2" value="C"> C
+                            </div>
+                            <div>
+                                <p>3. Mi a bináris 1101 oktális megfelelője?</p>
+                                <input type="radio" id="q3a" name="q3" value="13"> 13<br>
+                                <input type="radio" id="q3b" name="q3" value="15"> 15<br>
+                                <input type="radio" id="q3c" name="q3" value="10"> 10<br>
+                                <input type="radio" id="q3d" name="q3" value="11"> 11
+                            </div>
+                            <div>
+                                <p>4. Mi a bináris 1111 hexadecimális megfelelője?</p>
+                                <input type="radio" id="q4a" name="q4" value="F"> F<br>
+                                <input type="radio" id="q4b" name="q4" value="C"> C<br>
+                                <input type="radio" id="q4c" name="q4" value="D"> D<br>
+                                <input type="radio" id="q4d" name="q4" value="A"> A
+                            </div>
+                            <div>
+                                <p>5. Mi a bináris 101011 oktális megfelelője?</p>
+                                <input type="radio" id="q5a" name="q5" value="53"> 53<br>
+                                <input type="radio" id="q5b" name="q5" value="51"> 51<br>
+                                <input type="radio" id="q5c" name="q5" value="55"> 55<br>
+                                <input type="radio" id="q5d" name="q5" value="52"> 52
+                            </div>
+                            <button type="button" onclick="checkBinaryAnswers()">Ellenőriz</button>
+                        </form>
+                        <div id="binary-result"></div>
+                    </section>
+            
+        </div>
+    </main>
+
+    <section id="binary">
+        <div class="container"></div>
+        <h2>Bináris Számrendszer</h2>
+        <p>A bináris számrendszer 0 és 1 számjegyeket használ, és alapvetően minden számítógép ezen alapú számrendszeren működik...</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Számrendszer Kvíz. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="átváltó.js"></script>
+</body>
+</html>
